@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import org.junit.Test;
 
 
-class FechoDiarioTest {
+public  class FechoDiarioTest {
 
 	@Test
 	public void test() {

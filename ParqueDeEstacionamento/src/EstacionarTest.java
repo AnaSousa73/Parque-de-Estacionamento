@@ -1,10 +1,9 @@
 import static org.junit.Assert.*;
 
-import java.util.ArrayList;
 
 import org.junit.Test;
 
-class EstacionarTest {
+public class EstacionarTest {
 
 	@Test
 	public void EstacionamentoSimples() {
@@ -28,7 +27,7 @@ class EstacionarTest {
 	public void EstacionamentoDeficiente() {
 		Parque p1= new Parque();
 		p1.Estacionar(TipoVeiculo.Deficiente);
-		assertEquals( TipoVeiculo.Deficiente, p1.Lugares.get(4).TipoVeiculo);
+		assertEquals( TipoVeiculo.Deficiente, p1.Lugares.get(0).TipoVeiculo);
 	}
 	@Test
 	public void testePosicao() {

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-class EstacionamentoDeficienteTest {
+public class EstacionamentoDeficienteTest {
 
 	@Test
-	void test() {
+	public void test() {
 		EstacionamentoDeficiente Estacionamento = new EstacionamentoDeficiente(8);
 		assertEquals(TipoVeiculo.Deficiente, Estacionamento.TipoVeiculo);
 	}
