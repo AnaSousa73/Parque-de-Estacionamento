@@ -11,7 +11,7 @@ public class Parque {
 		this.Armazem = new Armazem();
 	}
 	public Estacionamento Estacionar (TipoVeiculo tipo) {
-				Estacionamento resultado = null;
+		Estacionamento resultado = null;
 		int LugarVazio = Lugares.size();
 		boolean ReutilizouLugar = false;
 		
@@ -21,27 +21,28 @@ public class Parque {
 				ReutilizouLugar = true;
 					break;					
 			}
-		switch (tipo) {
-		case Eletrico:
-			resultado = new EstacionamentoEletrico(Lugares.size());
-			break;
-		case Hidrogenio:
-			resultado = new EstacionamentoHidrogenio(Lugares.size());
-			break;
-		case Deficiente:
-			resultado = new EstacionamentoDeficiente(Lugares.size());
-			break;	
-			default:
-			resultado = new EstacionamentoSimples(Lugares.size());
-			break;
 		}
-		Lugares.add(resultado);
-		return resultado;
-	}
+		
+		switch (tipo) {
+			case Eletrico:
+				resultado = new EstacionamentoEletrico(Lugares.size());
+				break;
+			case Hidrogenio:
+				resultado = new EstacionamentoHidrogenio(Lugares.size());
+				break;
+			case Deficiente:
+				resultado = new EstacionamentoDeficiente(Lugares.size());
+				break;	
+				default:
+				resultado = new EstacionamentoSimples(Lugares.size());
+				break;
+		}
+		
+		
 		if (!ReutilizouLugar) {
 			Lugares.add(resultado);			
 		} else Lugares.set(LugarVazio, resultado);
-		    	return resultado ;
+		    return resultado ;
 	}	
 	public void DevolverVeiculo(int EstacionamentoID) {
 	Lugares.set(EstacionamentoID, null);

@@ -1,12 +1,13 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
+import java.util.ArrayList;
 
-class EstacionamentoEletricoTest2 {
+import org.junit.Test;
+
+public class EstacionamentoEletricoTest2 {
 
 	@Test
-	void test() {
+	public void test() {
 		EstacionamentoEletrico Estacionamento = new EstacionamentoEletrico(10);
 		assertEquals(TipoVeiculo.Eletrico, Estacionamento.TipoVeiculo);
 	}

@@ -1,11 +1,12 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
 
-class EstacionamentoHidrogenioTest {
+import org.junit.Test;
+
+public class EstacionamentoHidrogenioTest {
 
 	@Test
-	void test() {
+	public void test() {
 		EstacionamentoHidrogenio Estacionamento = new EstacionamentoHidrogenio(8);
 		assertEquals(TipoVeiculo.Hidrogenio, Estacionamento.TipoVeiculo);
 	}
