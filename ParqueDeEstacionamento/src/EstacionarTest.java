@@ -1,9 +1,9 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-import org.junit.jupiter.api.Test;
 
-class EstacionarTest {
+import org.junit.Test;
+
+public class EstacionarTest {
 
 	@Test
 	public void EstacionamentoSimples() {
@@ -27,7 +27,7 @@ class EstacionarTest {
 	public void EstacionamentoDeficiente() {
 		Parque p1= new Parque();
 		p1.Estacionar(TipoVeiculo.Deficiente);
-		assertEquals( TipoVeiculo.Deficiente, p1.Lugares.get(4).TipoVeiculo);
+		assertEquals( TipoVeiculo.Deficiente, p1.Lugares.get(0).TipoVeiculo);
 	}
 	@Test
 	public void testePosicao() {
